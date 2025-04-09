@@ -30,12 +30,12 @@ root_node = tree.root_node
 - 主要的差异在于：
     - 老版本：
     ```python
-    for node, your_capture_name in captures:
+    for node, capture_name in captures:
         ...
     ```
     - 新版本：
     ```python
-    for your_capture_name, node_list in captures:
+    for capture_name, node_list in captures.items():
         for node in node_list:
             ...
     ```
